@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciador Espaço Lilás</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+     <a href="index.html">
+         <img src="img/logo.png" alt="Logo">
+     </a>
+      <span>Gerenciador Espaço Lilás</span>
+    </div>
+    <nav class="menu">
+        <a href="ver_agendamento.php">Agendamentos</a>
+      <a href="pacientes.html">Pacientes</a>
+      <a href="estoque.html">Estoque</a>
+    </nav>
+  </header>
+
+  <main class="conteudo">
+    <div class="caixa-branca">
+     <a href="ver_agendamento.php" class="botao">Voltar</a>
+      <h1>Fazer novo agendamento:</h1>
+      <form class="formulario-agendamento" action="salvar_agendamento.php" method="POST">
+
+        <label for="nome">Nome do Paciente:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="data">Data do agendamento:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="tipo">Tipo da consulta:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="">Selecione uma opção</option>
+          <option value="ozionioterapia">Ozonioterapia</option>
+          <option value="estetica">Estética</option>
+          <option value="soroterapia">Soroterapia</option>
+          <option value="emagrecimento">Emagrecimento</option>
+        </select>
+
+        <button type="submit" class="botao">Agendar</button>
+       
+      </form>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido pelo grupo do Projeto Interdisciplinar - FAM - Mooca - ADS</p>
+  </footer>
+
+</body>
+</html>

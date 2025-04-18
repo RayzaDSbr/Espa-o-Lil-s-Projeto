@@ -1,0 +1,134 @@
+/* Cores base */
+:root {
+    --roxo: #bc9ff0;
+    --azul: #64b5f6;
+    --branco: #ffffff;
+  }
+
+  /* -----------------------INDEX-------------------------- */
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* fundo cinza claro */
+    color: #333;
+  }
+  
+  .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: 80vh; 
+  }
+  
+  .caixa-branca {
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    color: var(--branco);
+    padding: 20px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 100px;      
+    width: auto;      
+    margin-right: 10px;
+  }
+  
+  .logo span {
+    font-size: 25px;
+    font-weight: bold;
+    color: #924aa0;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    color: #bd81c9;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #419ae2;
+  }
+  
+  .conteudo {
+    padding: 40px 20px;
+  }
+
+  .rodape {
+    background: linear-gradient(to right, var(--roxo), var(--azul));
+    color: var(--branco);
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.95em;
+  }
+
+/* -----------------------FIM INDEX-------------------------- */
+/* -----------------------AGENDAMENTO-------------------------- */  
+.botao {
+    background: linear-gradient(to right, var(--roxo), var(--azul));
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-weight: bold;
+
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .botao:hover {
+    background: linear-gradient(to right, var(--azul), var(--roxo));
+  }
+
+  a.botao { /* Para deixar sem sublinhado no botão*/
+  text-decoration: none;
+  color: var(--branco); 
+    }
+
+  .formulario-agendamento {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario-agendamento label {
+    font-weight: bold;
+  }
+  
+  .formulario-agendamento input,
+  .formulario-agendamento select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+  }
